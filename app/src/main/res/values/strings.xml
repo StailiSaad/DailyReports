@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App -->
+    <string name="app_name">Générateur de Rapports Officiel</string>
+
+    <!-- Titles -->
+    <string name="title_activity_main">Générateur de Rapports Journaliers</string>
+    <string name="title_activity_settings">Paramètres</string>
+    <string name="title_activity_report_list">Rapports</string>
+    <string name="title_activity_report_detail">Détails du rapport</string>
+
+    <!-- Permissions -->
+    <string name="permission_storage_title">Permission de stockage</string>
+    <string name="permission_storage_message"> L\'application a besoin d\'accéder au stockage pour sauvegarder les rapports. </string>
+
+    <string name="permission_notification_title">Permission de notifications</string>
+    <string name="permission_notification_message">
+        L\'application a besoin d\'envoyer des notifications pour vous informer de la génération des rapports.
+    </string>
+
+    <!-- Messages -->
+    <string name="report_generated_success">Rapport généré avec succès</string>
+    <string name="report_saved">Rapport sauvegardé</string>
+    <string name="report_modified">Rapport modifié</string>
+    <string name="report_deleted">Rapport supprimé</string>
+
+    <!-- Buttons -->
+    <string name="btn_start">Commencer</string>
+    <string name="btn_view_reports">Voir les rapports</string>
+    <string name="btn_settings">Paramètres</string>
+    <string name="btn_save">Sauvegarder</string>
+    <string name="btn_cancel">Annuler</string>
+    <string name="btn_share">Partager</string>
+    <string name="btn_edit">Modifier</string>
+    <string name="btn_delete">Supprimer</string>
+
+    <!-- Formats (single strings) -->
+    <string name="format_pdf">PDF</string>
+    <string name="format_csv">CSV</string>
+    <string name="format_txt">TXT</string>
+
+    <!-- Formats (spinner list) -->
+    <string-array name="formats">
+        <item>TXT</item>
+        <item>CSV</item>
+        <item>PDF</item>
+    </string-array>
+
+</resources>
