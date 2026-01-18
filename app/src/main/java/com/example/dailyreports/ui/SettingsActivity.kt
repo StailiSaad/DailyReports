@@ -22,7 +22,7 @@ class SettingsActivity : AppCompatActivity() {
         val taskLayout = findViewById<LinearLayout>(R.id.taskLayout)
         val selectedTasks = mutableSetOf<String>()
 
-        // Add checkboxes
+
         TaskRepository.tasks.forEach {
             val cb = CheckBox(this)
             cb.text = it
@@ -32,7 +32,7 @@ class SettingsActivity : AppCompatActivity() {
             taskLayout.addView(cb)
         }
 
-        // Time picker
+
         timeBtn.setOnClickListener {
             val cal = Calendar.getInstance()
             TimePickerDialog(this, { _, h, m ->

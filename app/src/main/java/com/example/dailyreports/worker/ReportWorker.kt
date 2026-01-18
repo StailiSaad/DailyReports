@@ -22,11 +22,11 @@ class ReportWorker(
             val tasks = prefs.tasks()
             val content = tasks.joinToString(separator = "\n- ", prefix = "Tâches du jour:\n- ")
 
-            // Generate PDF
+
             val filePath = FileGenerator.generatePdf(applicationContext, content)
                 ?: return Result.failure()
 
-            // Save to DB
+
             ReportDatabase.get(applicationContext).reportDao().insert(
                 Report(
                     title = "Rapport Journalier",
@@ -36,7 +36,7 @@ class ReportWorker(
                 )
             )
 
-            // Show notification if permission granted
+
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU ||
                 EasyPermissions.hasPermissions(applicationContext, Manifest.permission.POST_NOTIFICATIONS)
             ) {

@@ -16,12 +16,12 @@ class SettingsActivityTest {
     fun clickTimeButton_showsTimePicker() {
         ActivityScenario.launch(SettingsActivity::class.java)
         onView(withId(R.id.btnTime)).perform(click())
-        // Vérification de l'affichage du TimePicker possible
+
     }
 
     @Test
     fun selectTasks_checkboxUpdatesSelection() {
         ActivityScenario.launch(SettingsActivity::class.java)
-        // Ici on peut simuler le click sur des CheckBox dynamiques
+
     }
 }

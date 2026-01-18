@@ -23,7 +23,7 @@ class ReportDetailActivity : AppCompatActivity() {
 
         val filePath = intent.getStringExtra("report_file_path") ?: return
 
-        // ✅ Use coroutine to call suspend function
+
         lifecycleScope.launch {
             val report = ReportDatabase.get(this@ReportDetailActivity)
                 .reportDao()
@@ -38,7 +38,7 @@ class ReportDetailActivity : AppCompatActivity() {
             }
         }
 
-        // Optional: open the file on click
+
         tvPath.setOnClickListener {
             val file = File(filePath)
             if (file.exists()) {
@@ -48,7 +48,7 @@ class ReportDetailActivity : AppCompatActivity() {
                     file
                 )
                 val intent = Intent(Intent.ACTION_VIEW)
-                intent.setDataAndType(uri, "text/plain") // adjust MIME type if needed
+                intent.setDataAndType(uri, "text/plain")
                 intent.flags = Intent.FLAG_GRANT_READ_URI_PERMISSION
                 startActivity(intent)
             }

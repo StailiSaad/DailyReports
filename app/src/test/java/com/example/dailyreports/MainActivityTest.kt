@@ -16,7 +16,7 @@ class MainActivityTest {
     fun clickSettingsButton_opensSettingsActivity() {
         ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.btnSettings)).perform(click())
-        // On pourrait vérifier si SettingsActivity est affichée
+
     }
 
     @Test

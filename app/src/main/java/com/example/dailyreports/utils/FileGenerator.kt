@@ -27,7 +27,7 @@ object FileGenerator {
 
         pdf.finishPage(page)
 
-        // Save file with timestamp
+
         val timestamp = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(Date())
         val file = File(ctx.filesDir, "report_$timestamp.pdf")
 
